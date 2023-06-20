@@ -1,19 +1,19 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect } from "react";
+import { Screen } from "expo";
+
 import { StyleSheet, Text, View } from "react-native";
 import OnboardingScreen from "./screens/Onboarding/OnboardingScreen";
-import { loadFonts } from "./components/fontLoader";
+
+import React, { useEffect } from "react";
+import Login from "./screens/Login";
 
 
-export default function App() {
- useEffect(() => {
-   loadFonts();
- }, []);
+export default function App() 
 
-
-  return (
-    
-      <OnboardingScreen />
-
-  );
+{
+   
+  return <OnboardingScreen/>;
 }
+
+
+
